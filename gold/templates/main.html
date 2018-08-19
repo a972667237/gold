@@ -1,0 +1,429 @@
+{% extends 'base.html' %}
+{% block title %} 首页 {% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="/static/css/slider.css" type="text/css" charset="utf-8">
+<link rel="stylesheet" href="/static/css/main.css">
+{% endblock %}
+{% block headScript %}
+<script src="/static/js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
+<script src="/static/js/slider.js" type="text/javascript"></script>
+{% endblock %}
+
+
+{% block header %}
+<div id="jssor_1">
+    <!-- Loading Screen -->
+    <div data-u="loading" class="jssorl-009-spin">
+        <img src="/static/img/spin.svg" />
+    </div>
+    <div data-u="slides" class="jssor_screen">
+        <div data-p="170.00">
+            <a href="/" target="_blank">
+            <img data-u="image" src="/static/img/cover2.png" />
+            </a>
+        </div>
+        <div data-p="170.00">
+            <a href="/" target="_blank">
+            <img data-u="image" src="/static/img/cover3.jpeg" />
+            </a>
+        </div>
+    </div>
+    <!-- Bullet Navigator -->
+    <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+        <div data-u="prototype" class="i" style="width:16px;height:16px;">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+            </svg>
+         </div>
+     </div>
+     <!-- Arrow Navigator -->
+     <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+         <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+             <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+         </svg>
+     </div>
+     <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+         <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+             <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+         </svg>
+     </div>
+</div>
+<!-- #endregion Jssor Slider End -->
+{% endblock %}
+{% block main %}
+<div class="announcement">
+    <div class="wrapper">
+        <div class="guide">
+            <div class="columns guide-link-place">
+                <div class="column is-one-fifth">
+                    <a href="/"><img src="https://www.bibgold.com/images/homepage/quotesNew/chips.gif" alt=""></a>
+                    <div>
+                        <p>无需佣金</p>
+                        <p>开户不花一分钱</p>
+                    </div>
+                </div>
+                <div class="column is-two-fifths">
+                    <a href="/">
+                        <div class="info-create-left">
+                            <span class="icon"><i class="fas fa-hand-holding-usd"></i></span>
+                            <span class="text">开立账户</span>
+                        </div>
+                        <div class="info-create-right">
+                            <span class="text">优质金融平台，顶级投资享受</span>
+                            <span class="icon"><i class="fas fa-chevron-circle-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="column is-one-fifth">
+                    <a href="/">
+                        <span class="icon"><i class="fas fa-bolt"></i></span>
+                        <span class="text">账户注资</span>
+                    </a>
+                </div>
+                <div class="column is-one-fifth">
+                    <a href="/">
+                        <span class="icon"><i class="fas fa-mouse-pointer"></i></span>
+                        <span class="text">开立模拟账户</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-title">
+                <span class="icon"><i class="fas fa-bullhorn"></i></span>
+                <span>最新公告：</span>
+                <div class="columns info-link-place">
+                    <div class="column is-one-third"><a href="/">2018年08月14日：更改过夜利息公告::::1</a></div>
+                    <div class="column is-one-third"><a href="/">2018年08月14日：更改过夜利息公告::::2</a></div>
+                    <div class="column is-one-third"><a href="/">2018年08月14日：更改过夜利息公告::::3</a></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<article class="container">
+    <div class="advantage-card self-card">
+        <div class="card-title">
+            <span>利汇优势</span>
+        </div>
+        <div class="card-content">
+            <div class="advantage-item">
+                <div class="advantage-item-image"></div>
+                <div class="advantage-item-info-title">
+                    <span>权威机构监管</span>
+                </div>
+                <div class="advantage-item-content">
+                    <p>金银业贸易场</p>
+                    <p>79号AA类行员</p>
+                </div>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-item-image"></div>
+                <div class="advantage-item-info-title">
+                    <span>快速交易执行</span>
+                </div>
+                <div class="advantage-item-content">
+                    <p>0.01秒交易执行</p>
+                    <p>一件下单平仓</p>
+                </div>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-item-image"></div>
+                <div class="advantage-item-info-title">
+                    <span>安全保证</span>
+                </div>
+                <div class="advantage-item-content">
+                    <p>银行级别安全系统</p>
+                    <p>全面保障客户资金</p>
+                </div>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-item-image"></div>
+                <div class="advantage-item-info-title">
+                    <span>超低成本</span>
+                </div>
+                <div class="advantage-item-content">
+                    <p>30美元点差回赠</p>
+                    <p>成本低至万分之0.6</p>
+                </div>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-item-image"></div>
+                <div class="advantage-item-info-title">
+                    <span>专业客服</span>
+                </div>
+                <div class="advantage-item-content">
+                    <p>二十四小时一对一</p>
+                    <p>在线咨询服务</p>
+                </div>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-item-image"></div>
+                <div class="advantage-item-info-title">
+                    <span>完美合作计划</span>
+                </div>
+                <div class="advantage-item-content">
+                    <p>多级佣金日反政策</p>
+                    <p>为您提供优越的代理条件</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="is-divider" data-content="advantage"></div>
+
+    <div class="info-card self-card">
+        <div class="card-title">
+            <span>独家解析</span>
+        </div>
+        <div class="card-content">
+            <div class="tabs">
+                <ul>
+                    <li class="is-active comments-tabs">
+                        <a>
+                            <span class="icon is-small"><i class="far fa-newspaper"></i></span>
+                            <span>利汇金评</span>
+                        </a>
+                    </li>
+                    <li class="wiki-tabs">
+                        <a>
+                            <span class="icon is-small"><i class="fas fa-book"></i></span>
+                            <span>金银百科</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tabs-content">
+                <div class="comments level is-mobile visible">
+                    <div class="tabs-content-cover level-item"></div>
+                    <div class="tabs-content-article level-item has-text-centered">
+                        <table class="table is-hoverable">
+                            <thead>
+                                <tr>
+                                    <th><abbr title="Position">标题</abbr></th>
+                                    <th>日期</th>
+                                    <th><abbr title="Points">作者</abbr></th>
+                                    <th>热度</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="/">我是文章啊</a></td>
+                                    <td>2018-08-04</td>
+                                    <td>Wueiz</td>
+                                    <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="/">我是文章啊</a></td>
+                                    <td>2018-08-04</td>
+                                    <td>Wueiz</td>
+                                    <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="/">我是文章啊</a></td>
+                                    <td>2018-08-04</td>
+                                    <td>Wueiz</td>
+                                    <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="/">我是文章啊</a></td>
+                                    <td>2018-08-04</td>
+                                    <td>Wueiz</td>
+                                    <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="/">我是文章啊</a></td>
+                                    <td>2018-08-04</td>
+                                    <td>Wueiz</td>
+                                    <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="wiki level is-mobile">
+                    <div class="tabs-content-article level-item has-text-centered">
+                        <table class="table is-hoverable">
+                            <thead>
+                                <tr>
+                                    <th><abbr title="Position">标题</abbr></th>
+                                    <th>日期</th>
+                                    <th><abbr title="Points">作者</abbr></th>
+                                    <th>热度</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="/">我是文章啊</a></td>
+                                    <td>2018-08-04</td>
+                                    <td>Wueiz</td>
+                                    <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="/">我是文章啊</a></td>
+                                    <td>2018-08-04</td>
+                                    <td>Wueiz</td>
+                                    <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="/">我是文章啊</a></td>
+                                    <td>2018-08-04</td>
+                                    <td>Wueiz</td>
+                                    <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="/">我是文章啊</a></td>
+                                    <td>2018-08-04</td>
+                                    <td>Wueiz</td>
+                                    <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="/">我是文章啊</a></td>
+                                    <td>2018-08-04</td>
+                                    <td>Wueiz</td>
+                                    <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tabs-content-cover level-item"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="is-divider" data-content="analysis"></div>
+
+    <div class="platform-card self-card">
+        <div class="card-title">
+            <span>平台及服务</span>
+        </div>
+        <div class="card-content">
+            <div class="card-content-left"></div>
+            <div class="card-content-right-true">
+                <p>国际级平台 我们公司为客户提供MT4交易平台进行网上电子交易。MT4交易平台综合了行情图表、技术分析和交易功能，是一款专业优秀的交易软件。其概念是集所有功能于一身，占用计算机资源少，运行速度快，还可下载历史数据和图表，广受国际投资公司和投资者的青睐。</p>
+                <div class="info-place">
+                    <div class="info-place-title">
+                        <span>支持平台</span>
+                        <div class="is-divider" data-content="platform"></div>
+                        <span class="icon is-large"><i class="fab fa-android fa-3x"></i></span>
+                        <span class="icon is-large"><i class="fab fa-apple fa-3x"></i></span>
+                        <span class="icon is-large"><i class="fab fa-chrome fa-3x"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-content-right">
+                <div class="pricing-table">
+                    <div class="pricing-plan is-warning">
+                        <div class="plan-header">PC版</div>
+                        <div class="plan-items">
+                            <div class="plan-item">使用PC即可直接操作</div>
+                            <div class="plan-item">简单、方便、快捷</div>
+                            <div class="plan-item">让 PC 用户能有更优质的体验</div>
+                            <div class="plan-item">...</div>
+                        </div>
+                        <div class="plan-footer">
+                            <a class="button is-fullwidth" href="http://v.sprd888.com/lhgj.exe">点我下载</a>
+                        </div>
+                    </div>
+
+                    <div class="pricing-plan is-active">
+                        <div class="plan-header">安卓版</div>
+                        <div class="plan-items">
+                            <div class="plan-item">安卓手机可以直接操作</div>
+                            <div class="plan-item">优雅、简单、实用</div>
+                            <div class="plan-item">离开电脑依旧交易自如</div>
+                            <div class="plan-item">...</div>
+                        </div>
+                        <div class="plan-footer">
+                            <a class="button is-fullwidth" href="http://v.sprd888.com/lhgj.3.5.1.apk">点我下载</a>
+                        </div>
+                    </div>
+
+                    <div class="pricing-plan is-danger">
+                        <div class="plan-header">IOS版</div>
+                        <div class="plan-items">
+                            <div class="plan-item">苹果用户不再受制于机</div>
+                            <div class="plan-item">方便、简单、大气</div>
+                            <div class="plan-item">离开电脑依旧交易自如</div>
+                            <div class="plan-item">...</div>
+                        </div>
+                        <div class="plan-footer">
+                            <a class="button is-fullwidth" href="https://fir.im/zn19d">点我下载</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="is-divider" data-content="download"></div>
+
+    <div class="friend-card self-card">
+        <div class="container is-narrow">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <h1 class="title is-size-3-desktop is-size-4-tablet is-size-5-mobile">我们的合作伙伴</h1>
+          </div>
+        </div>
+        <div class="client-grid">
+          <div class="columns is-multiline is-mobile">
+            <div class="column is-half-mobile is-one-quarter-tablet">
+              <figure class="image is-2x1"><img class="client-logo" src="/static/img/partners/Partner_02.jpg"></figure>
+            </div>
+            <div class="column is-half-mobile is-one-quarter-tablet">
+              <figure class="image is-2x1"><img class="client-logo" src="/static/img/partners/Partner_03.jpg"></figure>
+            </div>
+            <div class="column is-half-mobile is-one-quarter-tablet">
+              <figure class="image is-2x1"><img class="client-logo" src="/static/img/partners/Partner_04.jpg"></figure>
+            </div>
+            <div class="column is-half-mobile is-one-quarter-tablet">
+              <figure class="image is-2x1"><img class="client-logo" src="/static/img/partners/Partner_05.jpg"></figure>
+            </div>
+            <div class="column is-half-mobile is-one-quarter-tablet">
+              <figure class="image is-2x1"><img class="client-logo" src="/static/img/partners/Partner_06.jpg"></figure>
+            </div>
+            <div class="column is-half-mobile is-one-quarter-tablet">
+              <figure class="image is-2x1"><img class="client-logo" src="/static/img/partners/Partner_07.jpg"></figure>
+            </div>
+            <div class="column is-half-mobile is-one-quarter-tablet">
+              <figure class="image is-2x1"><img class="client-logo" src="/static/img/partners/Partner_08.jpg"></figure>
+            </div>
+            <div class="column is-half-mobile is-one-quarter-tablet">
+              <figure class="image is-2x1"><img class="client-logo" src="/static/img/partners/Partner_09.jpg"></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="is-divider" data-content="friends"></div>
+    <div class="detail-card self-card">
+
+    </div>
+</article>
+{% endblock %}
+{% block pageScript %}
+  <script>
+    $('.comments-tabs').click(function () {
+      $(this).addClass('is-active');
+      $('.wiki-tabs').removeClass('is-active');
+      $('.comments').addClass('visible');
+      $('.wiki').removeClass('visible');
+    })
+    $('.wiki-tabs').click(function () {
+      $(this).addClass('is-active');
+      $('.comments-tabs').removeClass('is-active');
+      $('.wiki').addClass('visible');
+      $('.comments').removeClass('visible');
+    })
+    if ($(document).width() <= 780) {
+        setInterval(function () {
+          console.log($('.info-link-place').position().top)
+          $('.info-link-place').css('top',$('.info-link-place').position().top - 1 + 'px')
+          if ($('.info-link-place').height() + 74 < - $('.info-link-place').position().top) {
+            $('.info-link-place').css('top', '8px');
+          }
+        }, 40)
+      }
+  </script>
+{% endblock %}

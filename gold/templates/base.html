@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="/static/css/bulma.min.css">
+        <link rel="stylesheet" href="/static/css/bulma-extensions.min.css" type="text/css" charset="utf-8">
+        <link rel="stylesheet" href="/static/css/jquery.fatNav.min.css" type="text/css" charset="utf-8">
+        <link rel="stylesheet" href="/static/css/base.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        {% block style %}
+        {% endblock %}
+        <script src="/static/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+        <script src="/static/js/jquery.fatNav.min.js" type="text/javascript"></script>
+        {% block headScript %}
+        {% endblock %}
+    </head>
+    <body>
+        <div class="fat-nav">
+            <div class="fat-nav__wrapper">
+                <ul>
+                    <li><a href="/">首页</a></li>
+                    <li><a href="/about">关于我们</a></li>
+                    <li><a href="/expert">咨询专家</a></li>
+                    <li><a href="/culture">文化介绍</a></li>
+                    <li><a href="/contact">联系方式</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-icon">
+                <img src="/static/img/zb_logo.png" alt="">
+            </div>
+            <div class="nav-item nav-normal">
+                <a href="/">首页</a>
+            </div>
+            <div class="nav-item nav-dropdown" id="nav-more">
+                <a href="/more">关于利汇</a>
+            </div>
+            <div class="nav-item nav-dropdown" id="nav-analyze">
+                <a href="/analyze">独家解析</a>
+            </div>
+            <div class="nav-item nav-dropdown" id="nav-situation">
+                <a href="/situation">市况速递</a>
+            </div>
+            <div class="nav-item nav-dropdown" id="nav-promotion">
+                <a href="/promotion">利汇推广</a>
+            </div>
+            <div class="nav-item nav-dropdown" id="nav-notice">
+                <a href="/notice">交易须知</a>
+            </div>
+            <div class="nav-item nav-dropdown" id="nav-manage">
+                <a href="/manage">用户中心</a>
+            </div>
+
+            <div class="nav-end">
+                <ul>
+                    <li><a href="/login" class="icon"><i class="fas fa-user"></i></a></li>
+                    <li><a href="/siginup" class="icon"><i class="fas fa-user-check"></i></a></li>
+                    <li><a href="/chat" class="icon"><i class="far fa-comment-dots"></i></a></li>
+                </ul>
+            </div>
+
+
+            <div class="full-drop">
+                <div class="drop-item columns" id="drop-more">
+                    <div class="column is-one-third">
+                        <div class="column-detail">
+                            <h2>利汇简介</h2>
+                            <div class="detail-link">
+                                <a href="/">关于我们</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="column-detail">
+                            <h2>利汇优势</h2>
+                            <div class="detail-link">
+                                <a href="/">资金安全</a>
+                                <a href="/">投资优势</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <a href="/" class="column-image"></a>
+                    </div>
+                </div>
+                <div class="drop-item columns" id="drop-analyze">
+                    <div class="column is-one-third">
+                        <div class="column-detail">
+                            <a href="/">
+                                <h2>利汇金评</h2>
+                                <p>每日更新，解析全盘走势</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="column-detail">
+                            <a href="/">
+                                <h2>利汇百科</h2>
+                                <p>入门知识，提升投资技巧</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <a href="/" class="column-image"></a>
+                    </div>
+                </div>
+                <div class="drop-item columns" id="drop-situation">
+                    <div class="column is-one-third">
+                        <div class="column-detail">
+                            <a href="/">
+                                <h2>市场数据</h2>
+                                <p>全球财经快讯同步播报</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="column-detail">
+                            <a href="/">
+                                <h2>财经日历</h2>
+                                <p>前瞻重大财经数据及事件</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <a href="/" class="column-image"></a>
+                    </div>
+                </div>
+                <div class="drop-item columns" id="drop-promotion">
+                    <div class="column is-one-third">
+                        <div class="column-detail">
+                            <a href="/">
+                                <h2>新客户赠金</h2>
+                                <p>万分之0.6投资成本，全行最低</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="column-detail">
+                            <a href="/">
+                                <h2>点差回赠</h2>
+                                <p>业内最高，每手点差回赠30美元</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <a href="/" class="column-image"></a>
+                    </div>
+                </div>
+                <div class="drop-item columns" id="drop-notice">
+                    <div class="column is-one-third">
+                        <div class="column-detail">
+                            <a href="/">
+                                <h2>细则简介</h2>
+                                <p>黄金白银基本交易规则</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="column-detail">
+                            <a href="/">
+                                <h2>存取款流程</h2>
+                                <p>线上注资取款，安全快速</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <a href="/" class="column-image"></a>
+                    </div>
+                </div>
+                <div class="drop-item columns" id="drop-manage">
+                    <div class="column is-one-third">
+                        <div class="column-detail">
+                            <h2>开户交易</h2>
+                            <div class="detail-link">
+                                <a href="/">真实账户</a>
+                                <a href="/">模拟账户</a>
+                                <a href="/">利汇问答</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="column-detail">
+                            <h2>账户管理</h2>
+                            <div class="detail-link">
+                                <a href="/">客户登陆</a>
+                                <a href="/">账户注资</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <a href="/" class="column-image"></a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <header>
+            {% block header %}
+            {% endblock %}
+        </header>
+        <main>
+            {% block main %}
+            {% endblock %}
+        </main>
+        <footer>
+            <div class="container">
+                <div class="columns">
+                    <div class="footer-home footer-items column">
+                        <a class="footer-title" href="/">首页</a>
+                    </div>
+                    <div class="footer-about footer-items column">
+                        <a class="footer-title" href="/">关于利汇</a>
+                        <ul>
+                            <li><a href="/">关于我们</a></li>
+                            <li><a href="/">资金安全</a></li>
+                            <li><a href="/">投资优势</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-analyze footer-items column">
+                        <a class="footer-title" href="/">独家解析</a>
+                        <ul>
+                            <li><a href="/">利汇金评</a></li>
+                            <li><a href="/">利汇百科</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="footer-promotion footer-items column">
+                        <a class="footer-title" href="/">利汇推广</a>
+                        <ul>
+                            <li><a href="/">新客户赠金</a></li>
+                            <li><a href="/">点差回赠</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-notice footer-items column">
+                        <a class="footer-title" href="/">交易须知</a>
+                        <ul>
+                            <li><a href="/">细则简介</a></li>
+                            <li><a href="/">存取款流程</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-account footer-items column">
+                        <a class="footer-title" href="/">用户中心</a>
+                        <ul>
+                            <li><a href="/">真实账户</a></li>
+                            <li><a href="/">模拟账户</a></li>
+                            <li><a href="/">利汇问答</a></li>
+                            <li><a href="/">客户登录</a></li>
+                            <li><a href="/">账户注资</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="is-divider" data-content="footer"></div>
+                <div class="columns">
+                    <div class="column"><span>电话：0755-12345678</span></div>
+                    <div class="column"><span>网址：www.baidu.com</span></div>
+                </div>
+                <div class="columns">
+                    <div class="column"><span>QQ：972667237</span></div>
+                    <div class="column"><span>地址：广州天河区珠江新城花城汇一楼101</span></div>
+                </div>
+                <div class="is-divider" data-content="contact"></div>
+                <div class="copy-right">
+                    <span>Copyright ©2018 利汇财经有限公司版权所有</span>
+                </div>
+            </div>
+        </footer>
+        <div class="float-menu">
+            <ul>
+                <li>
+                    <a href="/">
+                        <span class="icon is-large"><i class="fas fa-comments fa-2x"></i></span>
+                        <div class="float-menu-text">在线客服</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <span class="icon is-large"><i class="fas fa-user-plus fa-2x"></i></span>
+                        <div class="float-menu-text">开户</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        <span class="icon is-large"><i class="fab fa-weixin fa-2x"></i></span>
+                        <div class="float-menu-text">微信</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </body>
+    {% block bottomScript %}
+    {% endblock %}
+    <script>
+      $.fatNav();
+      $('nav').append($('.hamburger'))
+      $('.fat-nav').click(function () {
+        $(this).removeClass('active');
+        $('.hamburger').removeClass('active');
+        setTimeout(function () {
+          $('.fat-nav').css('display', 'none');
+        }, 200);
+      });
+    </script>
+    {% block pageScript %}
+    {% endblock %}
+</html>

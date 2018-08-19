@@ -1,0 +1,392 @@
+body {
+  overflow-x: hidden; overflow-y: auto;
+}
+
+header {
+  margin-top: 96px;
+}
+
+.hamburger {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  height: 96px;
+  box-shadow: 5px 5px 13px rgba(63,63,63,.2);
+  -webkit-box-shadow: 5px 5px 13px rgba(63,63,63,.2);
+  -moz-box-shadow: 5px 5px 13px rgba(63,63,63,.2);
+  -ms-box-shadow: 5px 5px 13px rgba(63,63,63,.2);
+  -o-box-shadow: 5px 5px 13px rgba(63,63,63,.2);
+  z-index: 100;
+  top: 0;
+  position: fixed;
+  background: #FFF;
+}
+
+nav img {
+  height: 100%;
+}
+
+nav:after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+nav .nav-icon {
+  margin: 0 32px;
+}
+
+nav div {
+  display: inline-block;
+  height: 76px;
+  vertical-align:middle;
+}
+
+nav .nav-item a {
+  color: black;
+  display: block;
+  height: 100%;
+}
+
+nav .nav-item {
+  height: 96px;
+  line-height: 96px;
+  margin-right: 32px;
+  padding: 0 9px;
+}
+
+nav .nav-item:hover {
+  border-bottom: 1px solid #ad9b68;
+}
+
+nav .nav-item:hover a{
+  color: #ad9b68;
+}
+
+nav .full-drop {
+  display: none;
+  position: absolute;
+  bottom: -258px;
+  left: 0;
+  height: 258px;
+  width: 100%;
+  padding: 0 5%;
+  z-index: 20;
+  background: white;
+  border-top: 1px solid lightgray;
+}
+
+nav .full-drop:hover {
+  display: block;
+}
+
+.full-drop .drop-item {
+  display: none;
+  height: 100%;
+}
+
+.nav-dropdown:hover~.full-drop{
+  display:block;
+}
+
+#nav-more:hover~.full-drop #drop-more {
+  display: flex;
+}
+
+#nav-analyze:hover~.full-drop #drop-analyze {
+  display: flex;
+}
+#nav-situation:hover~.full-drop #drop-situation {
+  display: flex;
+}
+#nav-promotion:hover~.full-drop #drop-promotion {
+  display: flex;
+}
+#nav-notice:hover~.full-drop #drop-notice {
+  display: flex;
+}
+#nav-manage:hover~.full-drop #drop-manage {
+  display: flex;
+}
+
+#drop-analyze:hover {
+  display: flex;
+}
+
+#drop-more:hover {
+  display: flex;
+}
+#drop-situation:hover {
+  display: flex;
+}
+#drop-promotion:hover {
+  display: flex;
+}
+#drop-notice:hover {
+  display: flex;
+}
+#drop-manage:hover {
+  display: flex;
+}
+.nav-end {
+  width: auto;
+}
+
+.nav-end ul {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-end ul:after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.nav-end ul li {
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.nav-end ul li:after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+li a {
+  vertical-align: middle;
+}
+
+.full-drop .columns .column .column-detail {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  padding: 32px 0;
+}
+
+.column-detail h2 {
+  font-weight: bolder;
+}
+
+.column-detail a h2 {
+  font-weight: bolder;
+  font-size: 16px;
+  color: black;
+}
+
+.column-detail a p {
+  display: block;
+  margin-top: 12px;
+}
+
+.column-detail a {
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+}
+
+.column-detail a:hover {
+  color: #ad9b68;
+}
+
+.column-detail h2+a {
+  border: 0;
+}
+
+.detail-link {
+  padding: 12px 0;
+  font-size: 0;
+}
+
+.detail-link a {
+  padding: 0 0.2em;
+  margin: 0;
+}
+
+.column-detail .detail-link a:not(:first-child) {
+  border-left: 1px solid #ad9b68;
+}
+
+.column-image {
+  display: block;
+  width: 100%;
+  height: 210px;
+  margin-top: 16px;
+}
+
+#drop-more .column-image {
+  background: url(https://www.bibgold.com/images/header/menu-list1.jpg);
+}
+
+#drop-analyze .column-image {
+  background: url(https://www.bibgold.com/images/header/menu-list1.jpg);
+}
+
+#drop-situation .column-image {
+  background: url(https://www.bibgold.com/images/header/menu-list1.jpg);
+}
+
+#drop-promotion .column-image {
+  background: url(https://www.bibgold.com/images/header/menu-list1.jpg);
+}
+
+#drop-notice .column-image {
+  background: url(https://www.bibgold.com/images/header/menu-list1.jpg);
+}
+
+#drop-manage .column-image {
+  background: url(https://www.bibgold.com/images/header/menu-list1.jpg);
+}
+
+footer {
+  background: #22273f;
+  text-align: center;
+}
+
+footer .columns .column a {
+  color: white;
+}
+
+footer .columns .column a.footer-title {
+  font-size: 16px;
+}
+
+footer ul {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid black;
+  font-size: 14px;
+}
+
+footer .columns {
+}
+
+footer .is-divider + .columns > .column > span {
+  color: white;
+}
+
+footer .columns + .columns {
+  color: white;
+}
+
+.copy-right span {
+  color: white;
+}
+
+footer .is-divider-vertical[data-content]::after,footer .is-divider[data-content]::after {
+  background: #22273f !important;
+}
+
+footer .qr-code {
+  width: 50%;
+  height: 105px;
+  background: url(/static/img/WechatIMG18.jpeg) fixed no-repeat;
+}
+
+footer .columns:first-child + .columns {
+  margin-top: 32px;
+}
+
+.tabs-content .comments div, .tabs-content .wiki div {
+  display: inline-block;
+  height: 100%;
+}
+
+.tabs-content .comments, .tabs-content .wiki {
+  font-size: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.tabs-content .visible {
+  display: flex;
+}
+
+.tabs-content {
+  height: 320px;
+}
+
+.tabs-content-cover {
+  width: 30%;
+}
+
+.tabs-content-article {
+  width: 70%;
+}
+
+.tabs-content-article {
+  font-size: 16px;
+  text-align: center;
+}
+
+.comments .tabs-content-cover {
+  background: url(/static/img/art02.png) no-repeat 100%;
+}
+
+.wiki .tabs-content-cover {
+  background: url(/static/img/art03.png) no-repeat 100%;
+}
+
+table {
+  width: 100%;
+}
+
+.float-menu {
+  position: fixed;
+  right: 32px;
+  top: 30%;
+  z-index: 500;
+}
+
+.float-menu a {
+  padding: 6px;
+  display: block;
+  border: 1px solid #ad9b68;
+  border-radius: 1px;
+  background-color: #fff;
+  text-align: center;
+  color: #ad9b68;
+}
+
+.float-menu a:hover {
+  background-color: #ad9b68;
+  color: white;
+}
+
+.fat-nav {
+  display: none;
+}
+
+@media screen and (max-width: 1108px) {
+  nav .nav-item {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 972px) {
+  nav .nav-item {
+    display: none;
+  }
+  nav {
+    text-align: center;
+  }
+  .hamburger {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: 5px;
+  }
+  .float-menu {
+    display: none;
+  }
+}

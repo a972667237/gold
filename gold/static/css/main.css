@@ -1,0 +1,369 @@
+.announcement .wrapper {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.announcement .wrapper .info .info-title {
+  display: flex;
+}
+
+.announcement .wrapper .info .info-link-place {
+  flex-grow: 1;
+  padding: 0 2em;
+}
+
+.announcement .wrapper .info .info-link-place a {
+  color: #666;
+  font-size: 14px;
+}
+
+.announcement .wrapper .info .info-link-place a:hover {
+  text-decoration: underline;
+}
+
+.announcement .wrapper .info {
+  padding-top: 53px;
+}
+
+.announcement .wrapper .guide {
+  position: absolute;
+  top: -15px;
+  height: 68px;
+  width: 100%;
+  background-image: linear-gradient(#fbfbfb,#fafafa,#f9f9f9,#f8f8f8,#f7f7f7,#f6f6f6,#f5f5f5);
+  box-shadow: 1px 3px 10px #cacaca;
+  border: 1px solid #ededed;
+  z-index: 99;
+}
+
+.guide .guide-link-place {
+  position: relative;
+  height: 100%;
+  margin: 0;
+}
+
+.guide .guide-link-place .column {
+  height: 100%;
+}
+
+.guide .guide-link-place .column:first-child img {
+  position: relative;
+  top: -94px;
+  display: inline-block;
+  margin-left: -12px;
+}
+
+.guide .guide-link-place .column:first-child div {
+  vertical-align: top;
+  display: inline-block;
+  margin-left: -12px;
+}
+
+.guide .guide-link-place .column {
+  color: #646464;
+  padding: 12px 0;
+}
+
+.guide .guide-link-place .column:nth-child(2) a {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  background-color: #e53637;
+  border-radius: 5px;
+  font-size: 0;
+  box-sizing: border-box;
+  padding: 0 12px;
+  color: white;
+  height: 100%;
+}
+
+.guide .guide-link-place .column:nth-child(2) a div .icon {
+  transition: all .5s;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+}
+
+.guide .guide-link-place .column:nth-child(2) a:hover div .icon {
+  width: 0;
+  opacity: 0;
+}
+
+.guide .guide-link-place .column:nth-child(2) a:after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.guide .guide-link-place .column:nth-child(2) a div {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  word-break:keep-all;
+  white-space:nowrap;
+  overflow:hidden;
+}
+
+.guide .guide-link-place .column:nth-child(2) a div:after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.guide .guide-link-place .column:nth-child(2) a div span {
+  vertical-align: middle;
+}
+
+.guide .guide-link-place .column:nth-child(2) a .info-create-left {
+  font-size: 16px;
+  float: left;
+}
+
+.guide .guide-link-place .column:nth-child(2) a .info-create-right {
+  font-size: 12px;
+  float: right;
+}
+
+.guide .guide-link-place .column:nth-child(3) a, .guide .guide-link-place .column:nth-child(4) a {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  background-color: #ad9b68;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 0 12px;
+  text-align: center;
+  color: white;
+  height: 100%;
+}
+
+.guide .guide-link-place .column:nth-child(3) a:after, .guide .guide-link-place .column:nth-child(4) a:after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.guide .guide-link-place .column:nth-child(3) a:hover .text, .guide .guide-link-place .column:nth-child(4) a:hover .text{
+  text-decoration: underline;
+}
+
+.guide .guide-link-place .column:nth-child(3) a span, .guide .guide-link-place .column:nth-child(4) a span{
+  vertical-align: middle;
+}
+
+.self-card {
+  margin-top: 32px;
+  margin-bottom
+}
+
+.self-card .card-title span{
+    font-size: 24px;
+    color: #ad9b68;
+    font-weight: 700;
+    margin: 32px 0 12px;
+}
+
+.advantage-card .card-content {
+  width: 100%;
+}
+
+.advantage-card .card-content:after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.advantage-card .card-content .advantage-item {
+  display: inline-block;
+  width: 16.3%;
+  vertical-align: middle;
+}
+
+.advantage-card .card-content .advantage-item .advantage-item-image {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin: 12px auto;
+}
+
+.advantage-card .card-content .advantage-item .advantage-item-info-title, .advantage-card .card-content .advantage-item .advantage-item-content {
+  text-align: center;
+}
+
+.advantage-card .card-content .advantage-item .advantage-item-info-title {
+  color: #eb290f;
+  font-size: 16px;
+}
+
+.advantage-card .card-content .advantage-item .advantage-item-content {
+  color: #222;
+  font-size: 14px;
+}
+
+.advantage-card .card-content .advantage-item:nth-child(1) .advantage-item-image{
+  background-image: url(/static/img/pic01.png);
+}
+
+.advantage-card .card-content .advantage-item:nth-child(2) .advantage-item-image{
+  background-image: url(/static/img/pic02.png);
+}
+
+.advantage-card .card-content .advantage-item:nth-child(3) .advantage-item-image{
+  background-image: url(/static/img/pic03.png);
+}
+
+.advantage-card .card-content .advantage-item:nth-child(4) .advantage-item-image{
+  background-image: url(/static/img/pic04.png);
+}
+
+.advantage-card .card-content .advantage-item:nth-child(5) .advantage-item-image{
+  background-image: url(/static/img/pic05.png);
+}
+
+.advantage-card .card-content .advantage-item:nth-child(6) .advantage-item-image{
+  background-image: url(/static/img/pic06.png);
+}
+
+.platform-card .card-content>div {
+  vertical-align: middle;
+}
+
+.platform-card .card-content:after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.platform-card .card-content {
+  font-size: 0;
+}
+
+.platform-card .card-content .card-content-left {
+  background-image: url(/static/img/WechatIMG8.png);
+  height: 317px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 30%;
+}
+
+.platform-card .card-content .card-content-right-true {
+  display: inline-block;
+  width: 70%;
+  font-size: 14px;
+}
+
+.platform-card .card-content .card-content-right {
+  margin-top: 12px;
+}
+
+.platform-card .card-content .card-content-right .pricing-plan .plan-items {
+  font-size: 14px;
+}
+
+.platform-card .card-content .card-content-right-true .info-place .info-place-title {
+  text-align: center;
+}
+
+.platform-card .card-content .card-content-right-true .info-place .info-place-title span:first-child{
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.platform-card .card-content .card-content-right-true .info-place .info-place-title .icon {
+  margin: 0 24px;
+  border-radius: 50%;
+  color: #7a7a7a;
+}
+
+.friend-card div:first-child div:first-child .column {
+  text-align: center;
+}
+
+@media screen and (max-width: 1210px){
+  .guide .guide-link-place .column:first-child div {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .guide .guide-link-place .column:first-child {
+    display: none;
+  }
+
+  .guide .guide-link-place .column:nth-child(2) {
+    width: 50%;
+  }
+  
+  .guide .guide-link-place .column:nth-child(3), .guide .guide-link-place .column:nth-child(4) {
+    width: 25%;
+  }
+
+  .advantage-card .card-content .advantage-item {
+    width: 32%;
+  }
+  .platform-card .card-content .card-content-left {
+    display: block;
+    margin: 0 auto;
+    width: 302px;
+  }
+  .platform-card .card-content .card-content-right-true {
+    display: block;
+    margin: 12px auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .guide .guide-link-place .column:nth-child(2) {
+      display:none;
+  }
+
+  .guide .guide-link-place .column:nth-child(3), .guide .guide-link-place .column:nth-child(4) {
+    width: 50%;
+  }
+
+  .tabs-content-cover {
+    width: 0;
+    display: none;
+    margin: 0;
+  }
+
+  .level.is-mobile .level-item {
+    margin: 0;
+  }
+  .tabs-content-article {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .announcement .wrapper .guide {
+    height: 100px;
+    position: relative;
+  }
+  .announcement .wrapper .info {
+    padding-top: 0;
+  }
+  .guide .guide-link-place .column:nth-child(3), .guide .guide-link-place .column:nth-child(4) {
+    width: 100%;
+    height: 50%;
+    padding: 3px 0;
+  }
+  .announcement .wrapper .info .info-title {
+    position: relative;
+    text-align: center;
+    max-height: 1.5em;
+    overflow: hidden;
+  }
+  .info-link-place {
+    position: relative;
+    top: 0;
+  }
+}
