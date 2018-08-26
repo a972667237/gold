@@ -221,30 +221,37 @@ li a {
   width: 100%;
   height: 210px;
   margin-top: 16px;
+  background-size: 100%;
 }
 
 #drop-more .column-image {
   background: url(https://www.bibgold.com/images/header/menu-list1.jpg);
+  background-size: 100%;
 }
 
 #drop-analyze .column-image {
-  background: url(https://www.bibgold.com/images/header/menu-list1.jpg);
+  background: url(/static/img/section-7.jpg);
+  background-size: 100%;
 }
 
 #drop-situation .column-image {
-  background: url(https://www.bibgold.com/images/header/menu-list1.jpg);
+  background: url(/static/img/section-11.jpg);
+  background-size: 100%;
 }
 
 #drop-promotion .column-image {
-  background: url(https://www.bibgold.com/images/header/menu-list1.jpg);
+  background: url(/static/img/section-9.jpg);
+  background-size: 100%;
 }
 
 #drop-notice .column-image {
-  background: url(https://www.bibgold.com/images/header/menu-list1.jpg);
+  background: url(/static/img/pic04.png);
+  background-size: 100%;
 }
 
 #drop-manage .column-image {
-  background: url(https://www.bibgold.com/images/header/menu-list1.jpg);
+  background: url(/static/img/section-2.jpg);
+  background-size: 100%;
 }
 
 footer {
