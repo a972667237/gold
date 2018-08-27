@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  {{ article.title }} -- 利汇国际
+{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="/static/css/list.css" type="text/css" charset="utf-8">
+<link rel="stylesheet" href="/static/css/detail.css" type="text/css" charset="utf-8">
+{% endblock %}
+
+{% block header %}
+<div class="container">
+    <div class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/">利汇国际</a></li>
+            <li><a href="/{{ middle_url }}">{{ middle }}</a></li>
+            <li class="is-active"><a href="#" aria-current="page">{{ article.title }}</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block main %}
+<article class="container">
+  <div class="list-title">
+    <h3>{{ article.title }}</h3>
+  </div>
+  <div class="list-detail">
+    <h4>发布于 {{ article.time }} 作者 {{ article.author }}</h4>
+  </div>
+  <div class="list-content">
+    {% autoescape off %}
+    {{ article.content }}
+    {% endautoescape %}
+  </div>
+</article>
+{% endblock %}

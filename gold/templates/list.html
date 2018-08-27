@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ final }} -- 利汇国际
+{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="/static/css/list.css" type="text/css" charset="utf-8">
+{% endblock %}
+{% block header %}
+<div class="container">
+    <div class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/">利汇国际</a></li>
+            <li class="is-active"><a href="#" aria-current="page">{{ final }}</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block main %}
+  <article class="container">
+    <div class="list-title">
+        <h3>{{ final }}</h3>
+    </div>
+    <div class="list-img">
+      <img src="https://www.bibgold.com/upload/images/2017/10/1110115529.jpg" alt="">
+    </div>
+    <div class="list-content">
+      {% for i in article %}
+      <div class="list-card">
+          <div class="card-title"><a href="/detail?id={{ i.id }}&type={{ final_type }}">{{ i.title }}</a></div>
+          <div class="card-desc">{{ i.description }}</div>
+          <div class="card-extend">
+              <div class="card-date">{{ i.time }}</div>
+              <div class="card-more"><a href="/detail?id={{ i.id }}&type={{ final_type }}">查看更多</a></div>
+          </div>
+      </div>
+      {% endfor %}
+    </div>
+  </article>
+{% endblock %}

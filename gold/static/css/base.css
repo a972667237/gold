@@ -225,28 +225,28 @@ li a {
 }
 
 #drop-more .column-image {
-  background: url(https://www.bibgold.com/images/header/menu-list1.jpg);
-  background-size: 100%;
+  background: url(/static/img/pexels-photo-533405.jpeg);
+  background-size: 100% 100%;
 }
 
 #drop-analyze .column-image {
   background: url(/static/img/section-7.jpg);
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 #drop-situation .column-image {
   background: url(/static/img/section-11.jpg);
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 #drop-promotion .column-image {
-  background: url(/static/img/section-9.jpg);
-  background-size: 100%;
+  background: url(/static/img/pexels-photo-886465.jpeg);
+  background-size: 100% 100%;
 }
 
 #drop-notice .column-image {
-  background: url(/static/img/pic04.png);
-  background-size: 100%;
+  background: url(/static/img/pexels-photo.jpg);
+  background-size: 100% 100%;
 }
 
 #drop-manage .column-image {

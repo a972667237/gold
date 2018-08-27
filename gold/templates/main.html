@@ -19,12 +19,12 @@
     </div>
     <div data-u="slides" class="jssor_screen">
         <div data-p="170.00">
-            <a href="/" target="_blank">
+            <a href="/signup" target="_blank">
             <img data-u="image" src="/static/img/cover2.png" />
             </a>
         </div>
         <div data-p="170.00">
-            <a href="/" target="_blank">
+            <a href="/signup" target="_blank">
             <img data-u="image" src="/static/img/cover3.jpeg" />
             </a>
         </div>
@@ -57,14 +57,14 @@
         <div class="guide">
             <div class="columns guide-link-place">
                 <div class="column is-one-fifth">
-                    <a href="/"><img src="https://www.bibgold.com/images/homepage/quotesNew/chips.gif" alt=""></a>
+                    <a href="/"><img src="/static/img/money.png" alt="" width=130 height=100></a>
                     <div>
                         <p>无需佣金</p>
                         <p>开户不花一分钱</p>
                     </div>
                 </div>
                 <div class="column is-two-fifths">
-                    <a href="/">
+                    <a href="/signup">
                         <div class="info-create-left">
                             <span class="icon"><i class="fas fa-hand-holding-usd"></i></span>
                             <span class="text">开立账户</span>
@@ -76,13 +76,13 @@
                     </a>
                 </div>
                 <div class="column is-one-fifth">
-                    <a href="/">
+                    <a href="/manage">
                         <span class="icon"><i class="fas fa-bolt"></i></span>
                         <span class="text">账户注资</span>
                     </a>
                 </div>
                 <div class="column is-one-fifth">
-                    <a href="/">
+                    <a href="/simulation">
                         <span class="icon"><i class="fas fa-mouse-pointer"></i></span>
                         <span class="text">开立模拟账户</span>
                     </a>
@@ -94,9 +94,9 @@
                 <span class="icon"><i class="fas fa-bullhorn"></i></span>
                 <span>最新公告：</span>
                 <div class="columns info-link-place">
-                    <div class="column is-one-third"><a href="/">2018年08月14日：更改过夜利息公告::::1</a></div>
-                    <div class="column is-one-third"><a href="/">2018年08月14日：更改过夜利息公告::::2</a></div>
-                    <div class="column is-one-third"><a href="/">2018年08月14日：更改过夜利息公告::::3</a></div>
+                    {% for i in announcement %}
+                    <div class="column is-one-third"><a href="/detail?id={{ i.pk }}&type=3">{{ i.title }}</a></div>
+                    {% endfor %}
                 </div>
             </div>
             
@@ -209,36 +209,14 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                {% for i in comment %}
                                 <tr>
-                                    <td><a href="/">我是文章啊</a></td>
-                                    <td>2018-08-04</td>
-                                    <td>Wueiz</td>
+                                    <td><a href="/detail?id={{ i.pk }}&type=1">{{ i.title }}</a></td>
+                                    <td>{{ i.time }}</td>
+                                    <td>{{ i.author }}</td>
                                     <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
                                 </tr>
-                                <tr>
-                                    <td><a href="/">我是文章啊</a></td>
-                                    <td>2018-08-04</td>
-                                    <td>Wueiz</td>
-                                    <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="/">我是文章啊</a></td>
-                                    <td>2018-08-04</td>
-                                    <td>Wueiz</td>
-                                    <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="/">我是文章啊</a></td>
-                                    <td>2018-08-04</td>
-                                    <td>Wueiz</td>
-                                    <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="/">我是文章啊</a></td>
-                                    <td>2018-08-04</td>
-                                    <td>Wueiz</td>
-                                    <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
-                                </tr>
+                                {% endfor %}
                             </tbody>
                         </table>
                     </div>
@@ -255,36 +233,14 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                {% for i in encyclopedia %}
                                 <tr>
-                                    <td><a href="/">我是文章啊</a></td>
-                                    <td>2018-08-04</td>
-                                    <td>Wueiz</td>
+                                    <td><a href="/detail?id={{ i.pk }}&type=1">{{ i.title }}</a></td>
+                                    <td>{{ i.time }}</td>
+                                    <td>{{ i.author }}</td>
                                     <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
                                 </tr>
-                                <tr>
-                                    <td><a href="/">我是文章啊</a></td>
-                                    <td>2018-08-04</td>
-                                    <td>Wueiz</td>
-                                    <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="/">我是文章啊</a></td>
-                                    <td>2018-08-04</td>
-                                    <td>Wueiz</td>
-                                    <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="/">我是文章啊</a></td>
-                                    <td>2018-08-04</td>
-                                    <td>Wueiz</td>
-                                    <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="/">我是文章啊</a></td>
-                                    <td>2018-08-04</td>
-                                    <td>Wueiz</td>
-                                    <td><span class="icon"><i class="fab fa-hotjar"></i></span></td>
-                                </tr>
+                                {% endfor %}
                             </tbody>
                         </table>
                     </div>

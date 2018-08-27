@@ -6,6 +6,7 @@
 
 .announcement .wrapper .info .info-title {
   display: flex;
+  white-space: nowrap;
 }
 
 .announcement .wrapper .info .info-link-place {
@@ -16,6 +17,7 @@
 .announcement .wrapper .info .info-link-place a {
   color: #666;
   font-size: 14px;
+  overflow: hidden;
 }
 
 .announcement .wrapper .info .info-link-place a:hover {
